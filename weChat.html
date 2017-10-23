@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="诗尼曼年度十优评选盛典">
+		<meta name="description" content="诗尼曼年度十优评选盛典">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+		<meta content="telephone=no" name="format-detection"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/wechat.css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<title>诗尼曼年度十优评选盛典</title>
+	</head>
+	<body id="vueMain">
+		<!--第一步-->
+		<div id="firstStep">
+			<!--logo-->
+			<div class="banner">
+				<img src="img/bannerApply.jpg" />
+			</div>
+			<div class="stepTitle">
+				<p>微信绑定</p>
+				<p></p>
+				<p></p>
+				<img src="img/stepTitle.png" />
+			</div>
+			<div class="message">
+				<ul>
+					<li>
+						<div class="inputL floatl">
+							<p>姓名：</p>
+						</div>
+						<div class="inputR floatl">
+							<input type="text"  placeholder="" />
+						</div>
+						<div class="clearl"></div>
+					</li>
+					<li>
+						<div class="inputL floatl">
+							<p>手机：</p>
+						</div>
+						<div class="inputR floatl">
+							<input type="text" maxlength="11" placeholder=""/>
+						</div>
+						<div class="clearl"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="select">
+				<p class="sp">您参赛的组别：</p>
+				<button isOpen='false' class="open">您的选择</button>
+				<ul class="selectBox">
+					<li class="selected" value="1">创意设计师</li>
+					<li class="selected" value="2">全能店长</li>
+					<li class="selected" value="3">高级家居顾问</li>
+					<li class="selected" value="4">安装服务工程师</li>
+				</ul>				
+			</div>
+			<div class="next">
+				<button style="margin-left: 2.5rem;">绑定</button>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/wechat.js" ></script>
+	</body>
+	<script>
+		(function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+
+	</script>
+</html>
