@@ -183,14 +183,15 @@ a {
     	margin: 0 auto;
     	margin-top: 10px;
     	margin-bottom: 4px;
-    	height: 302px;
     	overflow: hidden;
     	position: relative;
+    	border: 1px solid white;
     	}
     	
       #net .netBox ul li:nth-child(2) img {
         margin: 0 auto;
-        width: 100%;}
+        width: 100%;
+        }
       #net .netBox ul li:nth-child(2) input {
         position: absolute;
         top: 0;
@@ -441,7 +442,7 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,.75);
+	background-color: rgba(0,0,0,0.75);
 }
 .addBoxed1>img{
 	padding-top: 45%;
