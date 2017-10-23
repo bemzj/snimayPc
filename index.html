@@ -2,9 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>诗尼曼年度十优报名</title>
+		<meta name="keywords" content="诗尼曼年度十优评选盛典">
+		<meta name="description" content="诗尼曼年度十优评选盛典">
+		<title>诗尼曼年度十优评选盛典</title>
 		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/index.css" />		
+		<link rel="stylesheet" href="css/index.css?v=1" />
 	</head>
 	<body>
 		<div id="topImg">
@@ -77,15 +79,15 @@
 						<div class="awradTwo floatl">
 							<img src="img/iPhone.png" />
 							<p>iPhone 8</p>
-							<p>终选<span>前十名获得</span></p>
+							<!--<p>终选<span>前十名获得</span></p>-->
 						</div>
 						<div class="awradThree floatl">
 							<img src="img/add.png" />
 						</div>
 						<div class="awradFour floatl">
-							<img src="img/taiwan.png" />
-							<p>特等奖:台湾学习之旅</p>
-							<p>终选<span>前三名获得</span></p>					
+							<img src="img/taiwan.png?v=1" />
+							<p>线上万元广告奖励</p>
+							<p><span>特等奖3名</span></p>
 						</div>	
 						<div class="clearl"></div>
 					</div>					
@@ -115,8 +117,8 @@
 									<li>
 										<p>PLAY</p>
 									</li>
-									<li>
-										<a href="###">点击报名</a>
+									<li onclick="toShop()">
+										<a href="javascript:;">点击报名</a>
 									</li>
 								</ul>
 								<span></span>
@@ -150,16 +152,16 @@
 						</div>
 						<div class="awradTwo floatl">
 							<img src="img/computer.png" class="computer" />
-							<p>iPhone 8</p>
-							<p>终选<span>前十名获得</span></p>
+							<p>Microsoft Surface Pro 4</p>
+							<!--<p>终选<span>前十名获得</span></p>-->
 						</div>
 						<div class="awradThree floatl">
 							<img src="img/add.png" />
 						</div>
 						<div class="awradFour floatl">
-							<img src="img/taiwan.png" />
-							<p>特等奖:台湾学习之旅</p>
-							<p>终选<span>前三名获得</span></p>					
+                            <img src="img/taiwan.png?v=1" />
+                            <p>线上万元广告奖励</p>
+                            <p><span>特等奖3名</span></p>
 						</div>	
 						<div class="clearl"></div>
 					</div>					
@@ -189,9 +191,9 @@
 									<li>
 										<p>PLAY</p>
 									</li>
-									<li>
-										<a href="###">点击报名</a>
-									</li>
+                                    <li onclick="toDesign()">
+                                        <a href="javascript:;">点击报名</a>
+                                    </li>
 								</ul>
 								<span></span>
 							</div>
@@ -224,16 +226,16 @@
 						</div>
 						<div class="awradTwo floatl">
 							<img src="img/watch.png" class="computer" />
-							<p>iPhone 8</p>
-							<p>终选<span>前十名获得</span></p>
+							<p>Apple Watch</p>
+							<!--<p>终选<span>前十名获得</span></p>-->
 						</div>
 						<div class="awradThree floatl">
 							<img src="img/add.png" />
 						</div>
 						<div class="awradFour floatl">
-							<img src="img/taiwan.png" />
-							<p>特等奖:台湾学习之旅</p>
-							<p>终选<span>前三名获得</span></p>					
+                            <img src="img/taiwan.png?v=1" />
+                            <p>线上万元广告奖励</p>
+                            <p><span>特等奖3名</span></p>
 						</div>	
 						<div class="clearl"></div>
 					</div>					
@@ -263,9 +265,9 @@
 									<li>
 										<p>PLAY</p>
 									</li>
-									<li>
-										<a href="###">点击报名</a>
-									</li>
+                                    <li onclick="toSer()">
+                                        <a href="javascript:;">点击报名</a>
+                                    </li>
 								</ul>
 								<span></span>
 							</div>
@@ -298,16 +300,16 @@
 						</div>
 						<div class="awradTwo floatl">
 							<img src="img/mime.png" class="computer" />
-							<p>iPhone 8</p>
-							<p>终选<span>前十名获得</span></p>
+							<p>小米6(亮黑色64G)</p>
+							<!--<p>终选<span>前十名获得</span></p>-->
 						</div>
 						<div class="awradThree floatl">
 							<img src="img/add.png" />
 						</div>
 						<div class="awradFour floatl">
-							<img src="img/taiwan.png" />
-							<p>特等奖:台湾学习之旅</p>
-							<p>终选<span>前三名获得</span></p>					
+                            <img src="img/taiwan.png?v=1" />
+                            <p>线上万元广告奖励</p>
+                            <p><span>特等奖3名</span></p>
 						</div>	
 						<div class="clearl"></div>
 					</div>					
@@ -337,9 +339,9 @@
 									<li>
 										<p>PLAY</p>
 									</li>
-									<li>
-										<a href="###">点击报名</a>
-									</li>
+                                    <li onclick="toWork()">
+                                        <a href="javascript:;">点击报名</a>
+                                    </li>
 								</ul>
 								<span></span>
 							</div>
@@ -594,4 +596,19 @@
 			
 		</div>
 	</body>
+    <script type="text/javascript">
+        var url = "http://127.0.0.1/snimay/public/pc/";
+        function toShop(){
+            window.location.href=url+"applyShop.html";
+        }
+        function toDesign(){
+            window.location.href=url+"applyDesigner.html";
+        }
+        function toSer(){
+            window.location.href=url+"applyServer.html";
+        }
+        function toWork(){
+            window.location.href=url+"applyWork.html";
+        }
+    </script>
 </html>

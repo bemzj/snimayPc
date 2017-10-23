@@ -1,0 +1,73 @@
+.message .mr ul li:nth-child(2) .pt input {
+	width: 207px;
+}
+#videoBox{
+	width: 1060px;
+	margin: 0 auto;
+	border: 2px solid #f9ab00;
+	border-radius: 20px;
+	position: relative;
+	margin-top: 30px;
+}
+#videoBox span{
+	position: absolute;
+}
+#videoBox span:nth-child(1){
+	left: -2px;
+	top: 42px;
+	border-left: 4px solid black;
+	width: 0px;
+	height: 398px;
+}
+#videoBox span:nth-child(2){
+	right: -2px;
+	top: 42px;
+	border-left: 4px solid black;
+	width: 0px;
+	height: 398px;
+}
+#videoBox span:nth-child(3){
+	left: 46px;
+	top: -2px;
+	border-bottom: 4px solid black;
+	width: 968px;
+}
+#videoBox span:nth-child(4){
+	left: 46px;
+	bottom: -2px;
+	border-bottom: 4px solid black;
+	width: 968px;
+}
+#videoBox .videoBox{
+	display: block;
+	margin: 0 auto;
+	width: 1000px;
+	height: 418px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 1px dotted #0EE9C1;	
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+#videoBox .videoBox>img:nth-child(1){	
+	width: 100%;
+	
+}
+.addBoxed{
+	position: absolute;
+	top: 48%;
+	left: 0;
+	width: 100%;
+}
+.addBoxed>img{
+	margin: 0 auto;
+}
+.videoBox input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90%;
+	opacity: 0;
+}

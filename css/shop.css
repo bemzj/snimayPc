@@ -1,0 +1,27 @@
+#net .netBox {
+    width: 1049px;
+    margin-right: 0px; 
+}
+#net .netBox ul li:nth-child(1) {
+    width: 1043px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+#net .netBox ul li:nth-child(2) {
+    width: 1040px;
+    margin-top: 5px;
+}
+#return{
+	margin-top: 30px;
+}
+#return .shopTitle{
+	width: 1043px;
+	font-size: 29.17px;
+    color: #ffffff;
+    background-color: #07d4af;
+    text-align: center;
+    line-height: 62px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
