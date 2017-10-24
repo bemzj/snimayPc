@@ -256,6 +256,12 @@ a {
               color: #d5a12f;
               font-size: 44.7px;
               margin-top: 15px; }
+              .hand{
+              	position: absolute;
+              	top: 90%;
+              	left: 50%;
+              	margin-left:-16px ;
+              }
             #award .awardBox .awradr .condition .conR .play a {
               background: url(../img/btnBkg.png) no-repeat;
               background-size: cover;

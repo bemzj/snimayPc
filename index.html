@@ -7,6 +7,7 @@
 		<title>诗尼曼年度十优评选盛典</title>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/index.css?v=1" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
 	</head>
 	<body>
 		<div id="topImg">
@@ -67,7 +68,7 @@
 			<div class="awardBox">
 				<div class="floatl awradl">
 					<div class="imgBox">
-						<img src="img/shop.png" />
+						<img src="img/shoplist.png" />
 						<div></div>
 					</div>
 				</div>
@@ -122,6 +123,7 @@
 									</li>
 								</ul>
 								<span></span>
+								<img src="img/hand.png" class="hand" />
 							</div>
 						</div>
 						<div class="clearl"></div>
@@ -196,6 +198,7 @@
                                     </li>
 								</ul>
 								<span></span>
+								<img src="img/hand.png" class="hand" />
 							</div>
 						</div>
 						<div class="clearl"></div>
@@ -270,6 +273,7 @@
                                     </li>
 								</ul>
 								<span></span>
+								<img src="img/hand.png" class="hand" />
 							</div>
 						</div>
 						<div class="clearl"></div>
@@ -344,6 +348,7 @@
                                     </li>
 								</ul>
 								<span></span>
+								<img src="img/hand.png" class="hand" />
 							</div>
 						</div>
 						<div class="clearl"></div>
@@ -611,5 +616,11 @@
         function toWork(){
             window.location.href=url+"applyWork.html";
         }
+        setInterval(function(){
+			$('.hand').animate({top:'70%',opacity:'0'},500,function(){
+				$(this).css('top','90%');
+				$(this).css('opacity','1.0');
+			})
+		},500);
     </script>
 </html>
