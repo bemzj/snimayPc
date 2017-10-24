@@ -29,7 +29,7 @@ a {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 760px; }
+    top: 610px; }
     #topImg .topText p {
       text-align: center;
       font-size: 19.93px;
@@ -37,7 +37,7 @@ a {
       line-height: 35.93px; }
   #topImg .time {
     position: absolute;
-    top: 884px;
+    top: 734px;
     width: 1120px;
     left: 36px; }
     #topImg .time > img {
