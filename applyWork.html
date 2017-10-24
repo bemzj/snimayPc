@@ -11,149 +11,171 @@
 		<link rel="stylesheet" href="css/apply.css" />		
 		<link rel="stylesheet" href="css/worker.css" />
         <script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/jquery-1.11.1.min.js" ></script>
+        <style>
+            #wechat{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,.7);
+                text-align: center;
+            }
+        </style>
 	</head>
 	<body id="vueMain">
-		<div id="topImg">
-			<img src="img/topImg.jpg" />
-			<div class="topText">
-				<p>如果你是金子，在这里，你将光芒万丈；</p>
-				<p>如果你是星辰，在这里，你将熠熠生辉；</p>
-				<p>如果你是诗尼曼人，在这里，你将成就最好的自己！</p>
-			</div>
-			<div class="time">
-				<p>报名参赛</p>
-				<p>网络投票40%</p>
-				<p>专家评审60%</p>
-				<p>颁奖盛典</p>
-				<p class="te">·················入围PK阶段·················</p>
-				<p class="te">···············终极评审阶段···············</p>
-				<p class="te">·······获奖名单公布········</p>
-				<p>（每组<span>投票前20名</span>）</p>
-				<p>11.07</p>
-				<p>11月-12月</p>
-				<p>12月</p>
-				<p>2018.1月</p>		
-				<img src="img/time.png" />
-			</div>
-		</div>
-		<div id="award">
-			<!--店长-->
-			<div class="title">
-				<p>报名参赛</p>
-				<p>服务工程师请完善以下参赛信息</p>
-				<img src="img/title.png" />				
-			</div>
-			<div class="message">
-				<div class="floatl ml">
-					<ul>
-						<li>
-							<div class="mBox">
-                                <img src="img/head.jpg" id="upic"/>
-                                <div class="addBoxed1" id="add1">
+        <div id="main">
+            <div id="topImg">
+                <img src="img/topImg.jpg" />
+                <div class="topText">
+                    <p>如果你是金子，在这里，你将光芒万丈；</p>
+                    <p>如果你是星辰，在这里，你将熠熠生辉；</p>
+                    <p>如果你是诗尼曼人，在这里，你将成就最好的自己！</p>
+                </div>
+                <div class="time">
+                    <p>报名参赛</p>
+                    <p>网络投票40%</p>
+                    <p>专家评审60%</p>
+                    <p>颁奖盛典</p>
+                    <p class="te">·················入围PK阶段·················</p>
+                    <p class="te">···············终极评审阶段···············</p>
+                    <p class="te">·······获奖名单公布········</p>
+                    <p>（每组<span>投票前20名</span>）</p>
+                    <p>11.07</p>
+                    <p>11月-12月</p>
+                    <p>12月</p>
+                    <p>2018.1月</p>
+                    <img src="img/time.png" />
+                </div>
+            </div>
+            <div id="award">
+                <!--店长-->
+                <div class="title">
+                    <p>报名参赛</p>
+                    <p>服务工程师请完善以下参赛信息</p>
+                    <img src="img/title.png" />
+                </div>
+                <div class="message">
+                    <div class="floatl ml">
+                        <ul>
+                            <li>
+                                <div class="mBox">
+                                    <img src="img/head.jpg" id="upic"/>
+                                    <div class="addBoxed1" id="add1">
+                                        <img src="img/add.png" />
+                                    </div>
+                                    <input type="file" name="file" id="file_upload" />
+                                    <input type="hidden" id="user_pics" name="user_pics" value="">
+                                    <input type="hidden" id="user_pic" name="user_pic" value="">
+                                </div>
+                            </li>
+                            <li>
+                                <p>请上传个人形象照一张（着新版工衣）</p>
+                            </li>
+                            <li>
+                                <p>照片尺寸：600x500dpi,（1兆以内）</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="floatl mr">
+                        <ul>
+                            <li>
+                                <div class="floatl pl">
+                                    <p>手机号码：</p>
+                                </div>
+                                <div class="floatl pr">
+                                    <input type="text" id="eng_phone" placeholder="请输入你的手机号码"/>
+                                </div>
+                                <div class="clearl"></div>
+                            </li>
+                            <li>
+                                <p>个人简介：</p>
+                                <div class="pt">
+                                    <div>
+                                        <p style="text-indent: 32px;">大家好，我是</p>
+                                        <input type="text" id="eng_sell" placeholder="（店名）"/>
+                                        <p>诗尼曼安装工程师</p>
+                                        <input type="text" id="eng_name" placeholder="（姓名）" />
+
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div>
+                                        <p>今年累计服务客户 </p>
+                                        <input type="text" id="eng_serve_num" placeholder="(数量)"/>
+                                        <p>家，争做2017诗尼曼“年度十优”榜样，我相</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div>
+                                        <p>信我能行！</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearl"></div>
+                </div>
+            </div>
+            <div id="net">
+                <div class="netShow">
+                    <div class="netBox floatl">
+                        <ul>
+                            <li>
+                                <p>请点击上传现场安装效果图</p>
+                            </li>
+                            <li>
+                                <img src="img/work01.png" id="teamPic"/>
+                                <div class="addBoxed" id="add2">
                                     <img src="img/add.png" />
                                 </div>
-                                <input type="file" name="file" id="file_upload" />
-                                <input type="hidden" id="user_pics" name="user_pics" value="">
-                                <input type="hidden" id="user_pic" name="user_pic" value="">
-							</div>
-						</li>
-						<li>
-							<p>请上传个人形象照一张（着新版工衣）</p>
-						</li>
-						<li>
-							<p>照片尺寸：600x500dpi,（1兆以内）</p>
-						</li>
-					</ul>
-				</div>
-				<div class="floatl mr">
-					<ul>
-						<li>
-							<div class="floatl pl">
-								<p>手机号码：</p>
-							</div>
-							<div class="floatl pr">
-								<input type="text" id="eng_phone" placeholder="请输入你的手机号码"/>
-							</div>
-							<div class="clearl"></div>
-						</li>
-						<li>
-							<p>个人简介：</p>
-							<div class="pt">
-								<div>
-									<p style="text-indent: 32px;">大家好，我是</p>
-									<input type="text" id="eng_sell" placeholder="（店名）"/>
-									<p>诗尼曼安装工程师</p>
-									<input type="text" id="eng_name" placeholder="（姓名）" />
-									
-								</div>
-								<div class="clear"></div>
-								<div>
-									<p>今年累计服务客户 </p>	
-									<input type="text" id="eng_serve_num" placeholder="(数量)"/>
-									<p>家，争做2017诗尼曼“年度十优”榜样，我相</p>									
-								</div>								
-								<div class="clear"></div>
-								<div>
-									<p>信我能行！</p>
-								</div>
-								<div class="clear"></div>
-							</div>
-							<div class="clear"></div>
-						</li>
-					</ul>
-				</div>
-				<div class="clearl"></div>
-			</div>
-		</div>
-		<div id="net">
-			<div class="netShow">
-				<div class="netBox floatl">
-					<ul>
-						<li>
-							<p>请点击上传现场安装效果图</p>
-						</li>
-						<li>
-							<img src="img/work01.png" id="teamPic"/>
-							<div class="addBoxed" id="add2">
-								<img src="img/add.png" />
-							</div>
-                            <input type="file" name="file" id="file_upload_b" />
-                            <input type="hidden" id="tool_pics" name="tool_pics" value="">
-                            <input type="hidden" id="tool_pic" name="tool_pic" value="">
-						</li>
-					</ul>
-				</div>
-				<div class="netBox floatl"></div>
-				<div class="netBox floatl">
-					<ul>
-						<li>
-							<p>请点击并上传业主评价截图（选填）</p>
-						</li>
-						<li>
-							<img src="img/work02.png" id="sell_c"/>
-							<div class="addBoxed" id="add3">
-								<img src="img/add.png" />
-							</div>
-                            <input type="file" name="file" id="file_upload_c"/>
-                            <input type="hidden" id="owner_pics" name="owner_pics" value="">
-                            <input type="hidden" id="owner_pic" name="owner_pic" value="">
-						</li>
-					</ul>
-				</div>
-				<div class="clearl"></div>
-			</div>
-		</div>
-		<div class="btnSubmit">
-			<button id="eng" v-on:click="add_eng()">提交</button>
-		</div>
-		<div id="foot">
-			<p>分享报名成功链接给好友/朋友圈</p>
-			<p>关注<span>“诗尼曼家居”微信公众号，</span>进入参赛详情<span>点击“投票”</span>即可</p>
-		</div>
-		<div id="line">
-			
-		</div>
+                                <input type="file" name="file" id="file_upload_b" />
+                                <input type="hidden" id="tool_pics" name="tool_pics" value="">
+                                <input type="hidden" id="tool_pic" name="tool_pic" value="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="netBox floatl"></div>
+                    <div class="netBox floatl">
+                        <ul>
+                            <li>
+                                <p>请点击并上传业主评价截图（选填）</p>
+                            </li>
+                            <li>
+                                <img src="img/work02.png" id="sell_c"/>
+                                <div class="addBoxed" id="add3">
+                                    <img src="img/add.png" />
+                                </div>
+                                <input type="file" name="file" id="file_upload_c"/>
+                                <input type="hidden" id="owner_pics" name="owner_pics" value="">
+                                <input type="hidden" id="owner_pic" name="owner_pic" value="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearl"></div>
+                </div>
+            </div>
+            <div class="btnSubmit">
+                <button id="eng" v-on:click="add_eng()">提交</button>
+            </div>
+            <div id="foot">
+                <p>分享报名成功链接给好友/朋友圈</p>
+                <p>关注<span>“诗尼曼家居”微信公众号，</span>进入参赛详情<span>点击“投票”</span>即可</p>
+            </div>
+            <div id="line">
+
+            </div>
+        </div>
+
+            <!--微信二维码-->
+        <div id="wechat" style="display: none">
+            <div style="width: 280px;margin: auto;margin-top: 150px;">
+                <img src="img/bangding.png" alt="">
+            </div>
+            <h2 style="color: #fff;line-height: 40px">扫描二维码绑定微信，完成报名</h2>
+        </div>
 	</body>
+    <script type="text/javascript" src="lib/tools.js"></script>
     <script type="text/javascript" src="https://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
     <script src="js/pc-work-vue.js"></script>
 </html>

@@ -6,11 +6,12 @@
 		<meta name="description" content="诗尼曼年度十优评选盛典">
 		<title>诗尼曼年度十优设计师组报名</title>
         <link rel="stylesheet" href="../static/layui/css/layui.css">
-        <script type="text/javascript" src="../static/layui/layui.js"></script>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/apply.css" />		
 		<link rel="stylesheet" href="css/design.css" />
         <script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/jquery-1.11.1.min.js" ></script>
+
+        <script type="text/javascript" src="../static/layui/layui.js"></script>
 		<style type="text/css">
 			.rrBox{
 				display: flex;
@@ -23,6 +24,15 @@
 				-webkit-flex-direction: column;
 				overflow: hidden;
 			}
+            #wechat{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,.7);
+                text-align: center;
+            }
 		</style>
 	</head>
 	<body id="vueMain">
@@ -216,7 +226,16 @@
 		<div id="line">
 			
 		</div>
+        <!--微信二维码-->
+        <div id="wechat" style="display: none">
+            <div style="width: 280px;margin: auto;margin-top: 150px;">
+                <img src="img/bangding.png" alt="">
+            </div>
+            <h2 style="color: #fff;line-height: 40px">扫描二维码绑定微信，完成报名</h2>
+        </div>
 	</body>
+    <script type="text/javascript" src="lib/tools.js"></script>
     <script type="text/javascript" src="https://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
     <script src="js/pc-design-vue.js"></script>
+
 </html>
